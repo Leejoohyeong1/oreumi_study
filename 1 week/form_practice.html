@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>A/S 양식</legend>
+            <div>
+                <label for="username">ID :</label>    
+                <input type="text" name="username" placeholder="아이디" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="password">PW :</label>
+                <input type="password" name="password" placeholder="패스워드" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="email">E-Mail :</label>
+                <input type="text" name="email" placeholder="이메일" required>
+            </div>
+            <div>
+                <label for="gender">성별 :</label>
+                <input type="radio" name="gender" value="male" id="male" required>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+                <label for="female">여성</label>
+                <input type="radio" name="gender" value="etc" id="etc" required>
+                <label for="female">비공개</label>
+            </div>
+            <div>
+                <label for="brith">생년월일 :</label>
+                <input type="date" name="brith" min="1900-01-01" max="2099-12-31">
+            </div>
+            <div>
+                <label name="type">문의사항을 선택하세요</label>
+                <select name="type">
+                    <option value="선택">선택</option>
+                    <option value="1">환불</option>
+                    <option value="2">고장신고</option>
+                    <option value="3">기타</option>
+                </select>
+            </div>
+            <div>
+                <label for="summary">설명</label><br>
+                <textarea name="summary" rows="3" cols="20" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <div>
+                <label for="visit_time">희망 방문시간 </label>
+                <br/>
+                <label for="visit_time_09">9시</label>
+                <input type="checkbox" name="visit_time_09" id="visit_time_09" required value="09">
+                <br/>
+                <label for="visit_time_10">10시</label>
+                <input type="checkbox" name="visit_time_10" id="visit_time_10" required value="10">
+                <br/>
+                <label for="visit_time_11">11시</label>
+                <input type="checkbox" name="visit_time_11" id="visit_time_11" required value="11">
+                <br/>
+                <label for="visit_time_12">12시</label>
+                <input type="checkbox" name="visit_time_12" id="visit_time_12" required value="12">
+                <br/>
+                <label for="visit_time_13">13시</label>
+                <input type="checkbox" name="visit_time_13" id="visit_time_13" required value="13">
+                <br/>
+                <label for="visit_time_14">14시</label>
+                <input type="checkbox" name="visit_time_14" id="visit_time_14" required value="14">
+                <br/>
+                <label for="visit_time_15">15시</label>
+                <input type="checkbox" name="visit_time_15" id="visit_time_15" required value="15">
+                <br/>
+                <label for="visit_time_16">16시</label>
+                <input type="checkbox" name="visit_time_16" id="visit_time_16" required value="16">
+                <br/>
+                <label for="visit_time_17">17시</label>
+                <input type="checkbox" name="visit_time_17" id="visit_time_17"required value="17">
+                <br/>
+                <label for="visit_time_18">18시</label>
+                <input type="checkbox" name="visit_time_18" id="visit_time_18" required value="18">
+
+
+            </div>
+
+            <div>
+                <label for="argee"> 개인정보 수집에 동의</label>
+                <input type="checkbox" name="argee" id="argee" required>
+            </div>
+
+        </fieldset>
+        <br>
+        <div>
+            <button type="submit">제출</button>
+        </div>
+    </form>
+</body>
+</html>
